@@ -1,0 +1,100 @@
+/* Global styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  background-color: transparent;
+  border: 2px solid gray;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  width: 250px;
+  text-align: center;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
+
+button {
+  padding: 10px 30px;
+  margin-top: 20px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #00ffcc;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.neon {
+  font-size: 48px;
+  color: #0ff;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from { text-shadow: 0 0 10px #0ff; }
+  to { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
+}
+
+.aura-text {
+  font-size: 40px;
+  color: white;
+  margin-top: 40px;
+}
+
+.neon-rainbow {
+  font-size: 60px;
+  animation: rainbow 5s linear infinite;
+  font-weight: bold;
+  text-shadow: 0 0 20px white;
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
